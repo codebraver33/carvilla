@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvilla</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- preloade-->
+<div id="preloader"></div>
+   
+    <header>
+        <nav class="navbar">
+        <!--nav bar-->
+            <div class="logo">CARVILLA</div>
+           <div class="menu-toggle"><span>&#9776;</span></div> 
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#featured-cars">Featured Cars</a></li>
+                <li><a href="#new-cars">New Cars</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <section id="home" class="hero">  
+        <h1 class="line">Find Your <span class="colored">Perfect</span> Car</h1>
+        <div class="filter-container">
+            <div class="filter">
+              <!--options-->
+                <div class="dropdown">
+                    <label for="makes">All Makes</label>
+                    <select id="makes">  
+                        <option>Types</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                        <option value="bmw">BMW</option>
+                        <option value="honda">Ferrari</option>
+                        <option value="ford">Mercedes</option>
+                        <option value="bmw">Lamborghini</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="models">All Models</label>
+                    <select id="models">
+                        <option value="2022">Models</option>
+                        <option value="2022">2024</option>
+                        <option value="2021">2023</option>
+                        <option value="2020">2022</option>
+                        <option value="2022">2021</option>
+                        <option value="2021">2020</option>
+                        <option value="2020">2019</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="max-price">Max Price</label>
+                    <select id="max-price">
+                        <option value="2022">Max Price</option>
+                        <option value="10000">$40,000</option>
+                        <option value="20000">$50,000</option>
+                        <option value="30000">$60,000</option>
+                        <option value="10000">$70,000</option>
+                        <option value="20000">$80,000</option>
+                        <option value="30000">$90,000</option>
+                        <option value="100k">$100,000</option>
+                    </select>
+                </div>
+                <div class="search-bar">
+                    <i class="bi bi-search" id="search-icon"></i> <!--search icon -->
+                </div>
+            </div>
+        </div>
+        <!--car icons-->
+        <div class="car-icons">
+            <div class="car-icon">
+                <img src="cabriolet-car-13316.png" alt="Sedan">
+                <p>Sedan</p>
+            </div>
+            <div class="car-icon">
+                <img src="car3.png" alt="Coupe">
+                <p>Coupe</p>
+            </div>
+            <div class="car-icon">
+                <img src="car2.png" alt="SUV">
+                <p>SUV</p>
+            </div>
+            <div class="car-icon">
+                <img src="car4.png" alt="Hatchback">
+                <p>Hatchback</p>
+            </div>
+        </div>
+    </section>
+    <!--services-->
+    <div class="space" id="services"></div>
+    <section  class="services-section">
+        <div class="service">
+            <img src="icon.png" alt="Car Dealership Icon">
+            <h3>Largest Dealership of Cars</h3>
+            <p>Find the best deals on cars from trusted brands with unparalleled customer service.</p>
+        </div>
+        <div class="service">
+            <img src="car-repair-12840.png" alt="Repair Warranty Icon">
+            <h3>Unlimited Repair Warranty</h3>
+            <p>Enjoy peace of mind with repair coverage for your vehicle, anytime you need it.</p>
+        </div>
+        <div class="service">
+            <img src="icon3.png" alt="Insurance Support Icon">
+            <h3>Insurance Support</h3>
+            <p>Get comprehensive insurance solutions tailored to your car's needs.</p>
+        </div>
+    </section>
+    <div class="title" id="featured-cars">Featured Cars</div>
+    <!--featured cars-->
+<div class="featured-cars">
+  <div class="car-item" style="background-image: url('lambor.webp');">
+    <div class="car-content">
+      <div class="car-name">Lamborghini Huracán</div>
+      <div class="car-des">A high-performance sports car with iconic design.</div>
+      <a href="https://www.lamborghini.com/" target="_blank"><button>See More</button></a>
+    </div>
+  </div>
+  <div class="car-item" style="background-image: url('g.jpg');">
+    <div class="car-content">
+      <div class="car-name">Mercedes-Benz G-Class</div>
+      <div class="car-des">An ultimate luxury off-roader with unmatched power.</div>
+      <a href="https://www.mercedes-benz.com/" target="_blank"><button>See More</button></a>
+    </div>
+  </div>
+  <div class="car-item" style="background-image: url('fer.jpg');">
+    <div class="car-content">
+      <div class="car-name">Ferrari F8 Tributo</div>
+      <div class="car-des">An exquisite blend of speed, style, and engineering.</div>
+      <a href="https://www.ferrari.com/" target="_blank"><button>See More</button></a>
+    </div>
+  </div>
+</div>
+<!--All Cars Available-->
+      <div class="car-description-container" id="new-cars">
+        <h2 class="description-title">Our Exclusive Cars</h2>
+        <p class="description-text">
+          Discover a wide range of luxurious, high-performance vehicles designed for enthusiasts and collectors. Each car is a masterpiece of engineering, delivering exceptional power, comfort, and style.
+        </p>
+      </div>
+      <section class="car-grid">
+        <div class="car-card">
+          <img src="porch.jpg" alt="Porsche 911" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Porsche 911</h3>
+            <p class="car-cost">$100,000</p>
+            <p class="car-description">A symbol of performance and automotive legacy, perfect for driving enthusiasts.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="tesla.avif" alt="Tesla Model S" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Tesla Model S</h3>
+            <p class="car-cost">$90,000</p>
+            <p class="car-description">The future of electric cars, combining technology, sustainability, and luxury.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="m3.avif" alt="BMW M3" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">BMW M3</h3>
+            <p class="car-cost">$70,000</p>
+            <p class="car-description">A high-performance sedan that brings thrill to every drive.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="au.avif" alt="Audi R8" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Audi R8</h3>
+            <p class="car-cost">$160,000</p>
+            <p class="car-description">Luxury sports car with breathtaking performance and cutting-edge design.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="Maserati GranTurismo.avif" alt="Maserati GranTurismo" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Maserati GranTurismo</h3>
+            <p class="car-cost">$130,000</p>
+            <p class="car-description">A luxurious and powerful ride with unmatched elegance.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="aston.webp" alt="Aston Martin DB11" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Aston Martin DB11</h3>
+            <p class="car-cost">$220,000</p>
+            <p class="car-description">A masterpiece of luxury and performance, engineered for the discerning driver.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="corvett.jpg" alt="Chevrolet Corvette" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Chevrolet Corvette</h3>
+            <p class="car-cost">$60,000</p>
+            <p class="car-description">An American icon, with a mix of performance and bold design.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="ford.webp" alt="Ford Mustang" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Ford Mustang</h3>
+            <p class="car-cost">$50,000</p>
+            <p class="car-description">A classic American muscle car with impressive power and style.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="jaguar.avif" alt="Jaguar F-Type" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Jaguar F-Type</h3>
+            <p class="car-cost">$75,000</p>
+            <p class="car-description">A stunning blend of luxury, performance, and sleek design.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="camaro.avif" alt="Chevy Camaro" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Chevy Camaro</h3>
+            <p class="car-cost">$45,000</p>
+            <p class="car-description">A powerful American muscle car that commands attention on the road.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="nissan.avif" alt="Nissan GT-R" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Nissan GT-R</h3>
+            <p class="car-cost">$90,000</p>
+            <p class="car-description">A supercar with unparalleled performance and an iconic design.</p>
+          </div>
+        </div>
+        <div class="car-card">
+          <img src="Dodge Charger.webp" alt="Dodge Charger" class="car-image">
+          <div class="car-details">
+            <h3 class="car-title">Dodge Charger</h3>
+            <p class="car-cost">$40,000</p>
+            <p class="car-description">A bold muscle car with raw power and aggressive styling.</p>
+          </div>
+        </div>
+      </section>
+      <!--clients review-->
+      <div class="testimonials-section" id="clients">
+        <h2 class="title">What Our Clients Say</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>"The team at this dealership made buying my Lamborghini Huracán a smooth and enjoyable process. Excellent service from start to finish!"</p>
+            <div class="client-info">
+              <img src="Male-Face-PNG-Image-Transparent.png" alt="Client 1" />
+              <div>
+                <strong>Michael Brown</strong>
+                <span>New York</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"I couldn't be happier with my purchase. The staff were incredibly helpful and made sure I got exactly what I was looking for. Highly recommend!"</p>
+            <div class="client-info">
+              <img src="c5.jpg" alt="Client 2" />
+              <div>
+                <strong>Sam Johnson</strong>
+                <span>London</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"From the moment I walked in, I felt valued as a customer. The buying experience was top-notch, and I couldn’t be happier with my Mercedes-Benz G-Class."</p>
+            <div class="client-info">
+              <img src="c3.png" alt="Client 3" />
+              <div>
+                <strong>James Smith</strong>
+                <span>Los Angeles</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"The whole process was seamless. The team took care of every detail, and I’m now the proud owner of a Lamborghini, thanks to their excellent service!"</p>
+            <div class="client-info">
+              <img src="c2.png" alt="Client 4" />
+              <div>
+                <strong>Emily Davis</strong>
+                <span>Miami</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"I had a fantastic experience buying my Ferrari. The staff were knowledgeable and went above and beyond to ensure I had everything I needed."</p>
+            <div class="client-info">
+              <img src="c1.png" alt="Client 5" />
+              <div>
+                <strong>Chris Wilson</strong>
+                <span>Chicago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--contact form with social media icons-->
+      <div class="contact-title"  id="contact">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-section">
+        <div class="contact-left">
+          <p>
+            I fell into great labor to come to the smallest details. Feel free to reach us at:
+            <strong>Info@carvilla.com</strong>
+          </p>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="order" placeholder="Your Order" required></textarea>
+            <button type="submit" class="order-now-btn" id="order">Order Now</button>
+          </form>
+        </div>
+        <div class="contact-right">
+          <a href="https://www.facebook.com" target="_blank" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <!--brands working with or sponsors-->
+      <section class="brands-section" id="brands">
+        <div class="brands-intro">
+          <h2 class="brands-title">Our Sponsors</h2>
+        </div>
+        <div class="brands-row">
+          <div class="brand-logo">
+            <img src="bmw2.png" alt="BMW">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/br1.png" alt="Brand 1">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/br2.png" alt="Brand 2">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/br3.png" alt="Brand 3">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/br4.png" alt="Brand 4">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/br5.png" alt="Brand 5">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/br6.png" alt="Brand 6">
+          </div>
+          <div class="brand-logo">
+            <img src="frr.png" alt="Ferrari">
+          </div>
+          <div class="brand-logo">
+            <img src="brand/toyota brand.png" alt="Toyota">
+          </div>
+        </div>
+      </section>
+      <div class="footer"><p>&copy;2024CarVilla-Best car company</p></div>
+      <script src="script.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+

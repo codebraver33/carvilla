@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-image: url("file-HsKvTYkvzrLfXzckp6VwsP\ \(2\).webp ");
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You!</h1>
+    <p>We appreciate your message and will respond as soon as possible.</p>
+    <script >
+     const form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+  const name = form.querySelector('input[name="name"]').value.trim();
+  const email = form.querySelector('input[name="email"]').value.trim();
+  const order = form.querySelector('textarea[name="order"]').value.trim();
+  // Check if all fields are filled
+  if (!name || !email || !order) {
+    event.preventDefault(); // Prevent submission if fields are empty
+  } else {
+    // Redirect to thank.html if all fields are filled
+    event.preventDefault(); // Stop the default form action
+    window.location.href = "thank.html";
+  }
+});
+    </script>
+</body>
+</html>
